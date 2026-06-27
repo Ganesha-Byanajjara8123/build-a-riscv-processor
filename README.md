@@ -36,7 +36,7 @@ This repository documents my journey of designing and implementing a **5-Stage P
 
 ## Next Milestone
 
-**Program Counter (PC)** — Design, RTL implementation, simulation, and verification.
+**ALU** — Design, RTL implementation, simulation, and verification.
 
 ---
 
