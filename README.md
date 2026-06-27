@@ -1,6 +1,6 @@
 # build-a-riscv-processor
 
-# 🚀 Building a 5-Stage Pipelined RISC-V Processor | Part 1
+# 🚀 Building a 5-Stage Pipelined RISC-V Processor
 
 ## Project Overview
 
@@ -18,7 +18,7 @@ This repository documents my journey of designing and implementing a **5-Stage P
 
 ## Roadmap
 
-* [] RISC-V Architecture & ISA
+* [ ] RISC-V Architecture & ISA
 * [ ] Program Counter (PC)
 * [ ] Instruction Memory
 * [ ] Register File
