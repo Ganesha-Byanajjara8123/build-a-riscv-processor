@@ -43,6 +43,7 @@ This repository documents my journey of designing and implementing a **5-Stage P
 
 
 **Instructions Formates/types:**
+
 <img width="772" height="273" alt="All_Instruction_formats" src="https://github.com/user-attachments/assets/a1d44d35-de1b-4e29-890d-c69b7393abec" />
 
 
