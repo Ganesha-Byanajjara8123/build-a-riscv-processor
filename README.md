@@ -53,6 +53,11 @@ This repository documents my journey of designing and implementing a **5-Stage P
 
 ---
 
+**The RISC-V Block diagram**
+
+<img width="602" height="233" alt="Final_Prj" src="https://github.com/user-attachments/assets/0f10f893-d1f4-4465-af5d-829f7dded46f" />
+
+---
 
 
 
