@@ -47,6 +47,12 @@ This repository documents my journey of designing and implementing a **5-Stage P
 <img width="772" height="273" alt="All_Instruction_formats" src="https://github.com/user-attachments/assets/a1d44d35-de1b-4e29-890d-c69b7393abec" />
 
 ---
+**The RISC-V Architecture**
+
+<img width="525" height="365" alt="RISC (1)" src="https://github.com/user-attachments/assets/b311355b-295b-48b6-a987-41188b2f8cba" />
+
+---
+
 
 
 
