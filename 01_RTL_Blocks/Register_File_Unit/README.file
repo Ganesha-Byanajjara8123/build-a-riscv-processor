@@ -8,6 +8,7 @@ This module implements **32 general-purpose registers**, each **32 bits wide**, 
 
 ---
 
+
 ## Features
 
 * 32 × 32-bit Register File
