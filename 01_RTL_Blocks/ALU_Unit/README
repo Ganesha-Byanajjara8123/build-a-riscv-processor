@@ -53,6 +53,7 @@ The design supports arithmetic, logic, shift, and comparison instructions common
 
 ---
 
+
 ## Verification
 
 A dedicated Verilog testbench was created to verify every ALU operation.
