@@ -2,7 +2,7 @@
 
 # 🚀 Building a 5-Stage Pipelined RISC-V Processor
 
-## Project Overview
+## Project Overview 
 
 This repository documents my journey of designing and implementing a **5-Stage Pipelined RISC-V Processor** in **Verilog HDL**. The goal is to understand processor architecture through hands-on RTL design by implementing each hardware block individually, verifying its functionality, and integrating all modules into a complete processor.
 
