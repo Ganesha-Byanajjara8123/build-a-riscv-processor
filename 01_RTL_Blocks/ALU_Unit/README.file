@@ -1,4 +1,4 @@
-# Part 2 — Arithmetic Logic Unit (ALU)
+# Arithmetic Logic Unit (ALU)
 
 ## Overview
 
@@ -63,6 +63,8 @@ A dedicated Verilog testbench was created to verify every ALU operation.
 src1 = 3
 src2 = 5
 ```
+
+
 
 All supported ALU control codes were applied sequentially.
 
