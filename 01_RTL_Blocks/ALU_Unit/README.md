@@ -110,16 +110,6 @@ All operations produced the expected outputs during RTL simulation.
 
 ---
 
-## Project Structure
-
-```
-ALU.v
-tb_ALU.v
-wave.vcd
-images/
-README.md
-```
-
 ---
 
 ## Learning Outcome
