@@ -109,14 +109,17 @@ Branch control correctly redirects the PC
 PC_plus4_out always reflects the next sequential address
 
 ---
-Learning Outcome
+Learning Outcome:
+
 Through this module, I gained practical understanding of:
-Program flow in processors
-Sequential instruction execution
-Branch redirection
-Clocked RTL design
-Reset logic
-RTL simulation using GTKWave
+
+1.Program flow in processors
+2.Sequential instruction execution
+3.Branch redirection
+4.Clocked RTL design
+5.Reset logic
+6.RTL simulation using GTKWave
+
 Next Module
 
 ➡️ Decoder
