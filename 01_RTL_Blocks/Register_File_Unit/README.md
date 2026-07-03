@@ -52,6 +52,11 @@ The register file is implemented as an array of **32 registers**, each 32 bits w
 * Any attempt to write to **register x0** is ignored, preserving the RISC-V architectural requirement that x0 always reads as zero.
 
 ---
+Block-Diagram of Register file:
+
+<img width="589" height="336" alt="Screenshot 2026-05-19 204205" src="https://github.com/user-attachments/assets/834e803e-c98d-462c-9e4e-bcb62fc87bf5" />
+
+---
 
 ## Verification
 
