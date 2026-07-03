@@ -52,6 +52,11 @@ Output:
 The design supports arithmetic, logic, shift, and comparison instructions commonly used in the RISC-V Integer ISA.
 
 ---
+Block Diagram of ALU:
+
+<img width="1190" height="552" alt="Screenshot 2026-05-24 214858" src="https://github.com/user-attachments/assets/1f554714-8008-448f-895d-3554806387b3" />
+
+---
 
 
 ## Verification
