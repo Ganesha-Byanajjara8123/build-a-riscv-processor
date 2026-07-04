@@ -48,7 +48,7 @@ LUI	        ✅
 AUIPC	        ✅
 
 Generated Control Signals
-
+---
 The decoder generates:
 
 Register Write Enable
@@ -74,7 +74,7 @@ PC Selection (Jump)
 Adder Source Selection
 
 These signals coordinate the operation of the datapath.
-
+---
 RTL Features
 
 Pure combinational logic
