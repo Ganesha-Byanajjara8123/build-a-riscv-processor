@@ -26,40 +26,67 @@ Which result should be written back
 The decoder is responsible for converting instruction encoding into processor control signals.
 
 Supported Instruction Types
+
 Instruction	Supported
-R-Type	✅
+
+R-Type	        ✅
+
 I-Type ALU	✅
-Load	✅
-Store	✅
-Branch	✅
-JAL	✅
-JALR	✅
-LUI	✅
-AUIPC	✅
+
+Load	        ✅
+
+Store	        ✅
+
+Branch	        ✅
+
+JAL	        ✅
+
+JALR	        ✅
+
+LUI	        ✅
+
+AUIPC	        ✅
+
 Generated Control Signals
 
 The decoder generates:
 
 Register Write Enable
+
 Immediate Type
+
 ALU Source Selection
+
 ALU Control
+
 Data Memory Write Enable
+
 Branch Condition
+
 Load Size
+
 Load Unsigned
+
 Result Source
+
 PC Selection (Jump)
+
 Adder Source Selection
 
 These signals coordinate the operation of the datapath.
 
 RTL Features
+
 Pure combinational logic
+
 Default-safe outputs
+
 Opcode-based instruction decoding
+
 ALU operation decoding using funct3 and funct7
+
 Control generation for arithmetic, memory, branch, and jump instructions
+
 Verification Strategy
 
 ---
@@ -82,12 +109,19 @@ Outputs:
 The decoder was verified by applying representative instructions for:
 
 R-Type
+
 Load
+
 Store
+
 Branch
+
 JAL
+
 JALR
+
 LUI
+
 AUIPC
 
 ---
@@ -103,25 +137,37 @@ The waveform demonstrates that changing the instruction opcode updates the corre
 Examples include:
 
 Register write enabled for arithmetic and load instructions
+
 Memory write enabled only for store instructions
+
 Branch control asserted for branch instructions
+
 Jump control asserted for JAL and JALR
+
 Immediate type changes according to instruction format
+
 Result source changes correctly for load, jump, and upper-immediate instructions
 
 This verifies that the decoder correctly translates instruction encodings into processor control signals.
 ---
 Key Learnings
+
 RISC-V instruction encoding
+
 Control signal generation
+
 Opcode decoding
+
 ALU operation selection
+
 Processor control path design
+
 Combinational RTL design
+
 Waveform-based verification
-Next Module
+
 ---
 
-➡️ Immediate Generator
-
+➡️Next Module:Extend Unit 
+---
 Building Digital Hardware, One RTL Module at a Time.
