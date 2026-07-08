@@ -116,6 +116,8 @@ Waveform Analysis:
 
 The GTKWave simulation:
 
+<img width="1860" height="552" alt="Imm_Adder" src="https://github.com/user-attachments/assets/1dd08759-d4c7-4f94-a30d-a123c9c0f52c" />
+
 
 Correct source selection
 
