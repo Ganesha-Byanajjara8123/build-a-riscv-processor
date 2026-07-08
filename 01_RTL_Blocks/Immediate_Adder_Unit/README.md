@@ -13,7 +13,8 @@ This module provides the datapath with the address required for control flow and
 ---
 The Block-Diagram of Immediate Adder:
 
-![Uploading Screenshot 2026-05-30 173034.png…]()
+
+<img width="940" height="610" alt="Screenshot 2026-05-30 173034" src="https://github.com/user-attachments/assets/6314c853-18c2-4708-b740-ddd5028a4ae3" />
 
 ---
 
