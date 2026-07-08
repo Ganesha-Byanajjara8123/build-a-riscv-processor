@@ -124,13 +124,19 @@ Correct source selection
 Proper combinational address generation
 
 Immediate propagation without sequential delay
----
-Key Learnings
+**---**
+Key Learnings:
+
 Address generation in RISC-V
+
 PC-relative addressing
+
 Register-relative addressing
+
 Datapath control signal selection
+
 Combinational RTL implementation
+
 Functional verification using GTKWave
 ---
 ➡️Next Module: Branch Comparator
