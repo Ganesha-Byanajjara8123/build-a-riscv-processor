@@ -137,6 +137,5 @@ Combinational RTL implementation
 Functional verification using GTKWave
 ---
 Next Module: ➡️ Load Unit
-
 ---
 Building Digital Hardware, One RTL Module at a Time.
