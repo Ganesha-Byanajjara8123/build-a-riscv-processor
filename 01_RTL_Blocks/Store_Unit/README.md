@@ -21,6 +21,11 @@ SW	32 bits
 
 Instead of always writing an entire word, the Store Unit generates the correct write mask, ensuring that only the intended bytes are updated in memory.
 ---
+The Block-Diagram of Store Unit:
+
+<img width="371" height="164" alt="Store_Unit" src="https://github.com/user-attachments/assets/3a083fee-fbd7-492c-a3c6-ebeac00364c0" />
+
+---
 RTL Features:
 Combinational RTL implementation
 
@@ -103,8 +108,10 @@ Byte-enable mask = 1111
 All outputs were validated through GTKWave simulation.
 
  GTKWaveform Analysis:
- 
 
+ <img width="959" height="388" alt="Store_Unit" src="https://github.com/user-attachments/assets/02446fd8-2036-42f3-a914-ed2b3707cdce" />
+
+ 
 The simulation confirms:
 
 Correct propagation of memory address
