@@ -124,7 +124,7 @@ Unsigned halfword extension
 Each case was validated through GTKWave simulation.
 
 **Waveform Analysis**
-<img width="303" height="130" alt="Load_Unit" src="https://github.com/user-attachments/assets/987e590d-4099-4fe3-ab7c-50f43d5e186a" />
+<img width="958" height="477" alt="Load_Unit" src="https://github.com/user-attachments/assets/132aa4cf-4097-4672-99f5-8b8dbb4bf617" />
 
 ---
 
