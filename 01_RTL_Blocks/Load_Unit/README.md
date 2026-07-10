@@ -1,4 +1,4 @@
-Load Unit
+<img width="303" height="130" alt="Load_Unit" src="https://github.com/user-attachments/assets/38e9b536-28e5-444c-974f-4a645805a48f" />Load Unit
 What is the Load Unit?
 
 The Load Unit processes data read from Data Memory and converts it into the correct 32-bit value before it is written back to the Register File.
@@ -18,46 +18,87 @@ The processor must interpret these values correctly depending on the instruction
 For example:
 
 LB loads a signed byte.
+
 LBU loads an unsigned byte.
+
 LH loads a signed halfword.
+
 LHU loads an unsigned halfword.
+
 LW loads an entire 32-bit word.
 
 Without this unit, the Register File could receive incorrect values.
+---
+The Block-Diagram of Load Unit
 
+<img width="303" height="130" alt="Load_Unit" src="https://github.com/user-attachments/assets/9d425ffc-588c-4f7e-839d-3bcb276b0c20" />
+
+---
 Supported Instructions
+
 Instruction	Description
+
 LB	Load Byte
+
 LBU	Load Byte Unsigned
+
 LH	Load Halfword
+
 LHU	Load Halfword Unsigned
+
 LW	Load Word
-RTL Features
+---
+**RTL Features:**
+
 Pure combinational logic
+
 Byte extraction
+
 Halfword extraction
+
 Word loading
+
 Sign extension
+
 Zero extension
+
 32-bit write-back output
+
 Interface
+
 Signal	Width	Description
+
 Read_Data_In	32	Data returned from memory
+
 Load_Size_In	2	Load size selector
+
 Load_Unsigned_In	1	Selects sign or zero extension
+
 Loaded_Data_Out	32	Formatted write-back data
-RTL Operation
+---
+**RTL Operation:**
+
 Load Byte (LB)
+
 Sign Extend 8-bit value
+
 Load Byte Unsigned (LBU)
+
 Zero Extend 8-bit value
+
 Load Halfword (LH)
+
 Sign Extend 16-bit value
+
 Load Halfword Unsigned (LHU)
+
 Zero Extend 16-bit value
+
 Load Word (LW)
+
 Pass complete 32-bit data
-Verification Strategy
+---
+**Verification Strategy:**
 
 The module was verified using dedicated test cases covering every supported load instruction.
 
@@ -80,30 +121,45 @@ Unsigned halfword extension
 ✔ LW
 
 32-bit word loading
-
+---
 Each case was validated through GTKWave simulation.
 
-Waveform Analysis
+**Waveform Analysis**
+<img width="303" height="130" alt="Load_Unit" src="https://github.com/user-attachments/assets/987e590d-4099-4fe3-ab7c-50f43d5e186a" />
 
-The waveform confirms:
+---
+
+**The waveform confirms:**
 
 Correct byte extraction
+
 Correct halfword extraction
+
 Proper sign extension
+
 Proper zero extension
+
 Direct 32-bit word loading
+
 Correct output selection based on instruction type
+---
+**Key Learnings**
 
-Key Learnings
 RISC-V load instruction behavior
-Sign extension techniques
-Zero extension techniques
-Memory read datapath
-Write-back data formatting
-Combinational RTL implementation
-Functional verification using GTKWave
-Next Module
 
-➡️ Data Memory
+Sign extension techniques
+
+Zero extension techniques
+
+Memory read datapath
+
+Write-back data formatting
+
+Combinational RTL implementation
+
+Functional verification using GTKWave
+---
+Next Module: ➡️ Data Memory
+---
 
 Building Digital Hardware, One RTL Module at a Time.
