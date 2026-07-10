@@ -1,4 +1,3 @@
-<img width="303" height="130" alt="Load_Unit" src="https://github.com/user-attachments/assets/38e9b536-28e5-444c-974f-4a645805a48f" />Load Unit
 What is the Load Unit?
 
 The Load Unit processes data read from Data Memory and converts it into the correct 32-bit value before it is written back to the Register File.
