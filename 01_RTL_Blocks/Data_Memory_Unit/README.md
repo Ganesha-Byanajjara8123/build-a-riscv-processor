@@ -21,7 +21,7 @@ A processor cannot store 1000 integers in its Register File alone. Instead:
 
 Registers hold temporary operands.
 Data Memory stores the actual program data.
-
+---
 This separation enables efficient computation while supporting large applications.
 
 Supported Operations
@@ -55,7 +55,7 @@ Memory[100] = 0x78
 Memory[101] = 0x56
 Memory[102] = 0x34
 Memory[103] = 0x12
-
+---
 The bytes are stored in little-endian order, matching the RISC-V memory model.
 
 Store Halfword (SH)
@@ -80,6 +80,7 @@ Memory[Addr+2],
 Memory[Addr+1],
 Memory[Addr]
 }
+---
 Verification Strategy
 
 The module was verified with directed test cases for:
@@ -107,40 +108,7 @@ Correct write data propagation
 Proper read-back of stored data
 
 The verification log also confirms successful execution of all directed test cases.
-
-Integration
-                Register File
-                     │
-               Source Data (rs2)
-                     │
-                     ▼
-               Immediate Adder
-                     │
-             Computed Address
-                     │
-                     ▼
-                Store Unit
-                     │
-      ┌──────────────┼──────────────┐
-      │              │              │
- Address        Write Data      Write Mask
-      │              │              │
-      └──────────────┴──────────────┘
-                     │
-                     ▼
-                Data Memory
-                     │
-              Read Data (32-bit)
-                     │
-                     ▼
-                 Load Unit
-                     │
-                     ▼
-              Write-Back MUX
-                     │
-                     ▼
-               Register File
-
+---
 Key Learnings
 RISC-V data memory architecture
 Byte-addressable memory organization
@@ -149,8 +117,8 @@ Byte-enable write masking
 Memory read reconstruction
 Load/Store datapath integration
 Functional verification using Verilator and GTKWave
-Next Module
 
-➡️ Write-Back Multiplexer
-
+---
+➡️Next Module: Instruction Memory 
+---
 Building Digital Hardware, One RTL Module at a Time.
