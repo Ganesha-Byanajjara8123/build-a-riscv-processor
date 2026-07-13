@@ -145,7 +145,10 @@ Accurate data reconstruction
 
 Expected memory contents after each write
 
-Waveform Analysis
+**GTKWaveform Analysis:**
+
+<img width="959" height="330" alt="DM_SW (1)" src="https://github.com/user-attachments/assets/345e196b-e152-4e98-bcb4-6bc4cfe31a9d" />
+
 
 The waveform confirms:
 
