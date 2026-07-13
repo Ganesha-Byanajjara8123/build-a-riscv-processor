@@ -6,6 +6,12 @@ The Data Memory stores data generated and used during program execution.
 Unlike the Register File, which contains only 32 registers, Data Memory provides a much larger storage space for variables, arrays, stack data, and other program information.
 
 This module implements the memory system used by Load and Store instructions in the RISC-V processor.
+---
+**The Block-Diagram of Data_Memory:**
+
+<img width="332" height="173" alt="Data_memory" src="https://github.com/user-attachments/assets/da19874c-6704-421b-9546-932c0b47ae43" />
+
+---
 
 Why is it Required?
 
@@ -148,6 +154,9 @@ Expected memory contents after each write
 **GTKWaveform Analysis:**
 
 <img width="959" height="330" alt="DM_SW (1)" src="https://github.com/user-attachments/assets/345e196b-e152-4e98-bcb4-6bc4cfe31a9d" />
+
+<img width="587" height="312" alt="DM_SW (2)" src="https://github.com/user-attachments/assets/d918a4cf-8137-45c3-b5c5-fd79f3bd3247" />
+
 
 
 The waveform confirms:
