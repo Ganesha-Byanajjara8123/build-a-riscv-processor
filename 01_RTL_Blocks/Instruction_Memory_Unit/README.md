@@ -115,6 +115,7 @@ Separate Instruction Memory and Data Memory, following a Harvard-style architect
 Program initialization through $readmemh for flexibility during simulation and testing.
 
 Combinational instruction fetch, appropriate for the current single-cycle processor design.**
+
 ---
 Key Learnings:
 
