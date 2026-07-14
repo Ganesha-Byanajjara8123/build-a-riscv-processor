@@ -132,6 +132,7 @@ Little-endian instruction reconstruction
 Harvard-style memory organization
 
 Functional verification using GTKWave
+
 ---
 ➡️Next Module: Write-Back Multiplexer
 ---
