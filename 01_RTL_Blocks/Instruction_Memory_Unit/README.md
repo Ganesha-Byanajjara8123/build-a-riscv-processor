@@ -13,16 +13,7 @@ A processor cannot execute instructions unless they are available in memory.
 
 The fetch sequence is straightforward:
 
-Program Counter (PC)
-        │
-        ▼
-Instruction Memory
-        │
-        ▼
-32-bit Instruction
-        │
-        ▼
-Instruction Decoder
+Program Counter (PC) ---> Instruction Memory ---> 32-bit Instruction ---> Instruction Decoder
 
 Every instruction executed by the processor begins here.
 ---
@@ -32,19 +23,32 @@ Every instruction executed by the processor begins here.
 
 ---
 
-RTL Features
+RTL Features:
+
 1024-byte instruction memory
+
 Byte-addressable architecture
+
 Program initialization using $readmemh
+
 32-bit instruction reconstruction
+
 Little-endian memory organization
+
 Combinational instruction fetch
+---
 Interface
+
 Signal	Width	Description
+
 PC_in	32	Instruction address from Program Counter
+
 Instruction_Out	32	Fetched instruction
+---
 RTL Operation
+
 Program Initialization
+
 $readmemh("program.hex", Instruction_mem);
 
 Instructions are loaded into memory from a hexadecimal program file before simulation begins.
@@ -96,14 +100,21 @@ GTKWaveform Analysis:
 
 The waveform confirms:
 
-Correct instruction fetch using the Program Counter
+**Correct instruction fetch using the Program Counter
+
 Proper reconstruction of 32-bit instructions from four memory bytes
+
 Immediate availability of fetched instructions through the combinational read path
-Design Decisions
+
+Design Decisions:
+
 Byte-addressable memory organization to match the RISC-V ISA.
+
 Separate Instruction Memory and Data Memory, following a Harvard-style architecture in this implementation.
+
 Program initialization through $readmemh for flexibility during simulation and testing.
-Combinational instruction fetch, appropriate for the current single-cycle processor design.
+
+Combinational instruction fetch, appropriate for the current single-cycle processor design.**
 ---
 Key Learnings:
 
