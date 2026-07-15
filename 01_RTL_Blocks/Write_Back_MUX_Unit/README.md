@@ -11,14 +11,14 @@ This is the final stage of the datapath before the processor completes an instru
 Why is it Required?
 
 Different instruction classes generate results from different hardware blocks:
-
-Instruction Type	Write-Back Source
-R-Type / I-Type ALU	ALU Result
-Load	Data Memory
-JAL / JALR	PC + 4
-LUI	Immediate Value
-AUIPC	PC + Immediate
-
+---
+Instruction Type        	Write-Back Source
+R-Type / I-Type ALU	        ALU Result
+Load	                      Data Memory
+JAL / JALR                	PC + 4
+LUI	                        Immediate Value
+AUIPC	                      PC + Immediate
+----
 The WB MUX ensures that only the correct result reaches the Register File.
 
 RTL Features
