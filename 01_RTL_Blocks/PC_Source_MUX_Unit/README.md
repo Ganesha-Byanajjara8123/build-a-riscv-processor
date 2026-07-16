@@ -94,7 +94,6 @@ Address │   MUX    ├────► Next PC
          Branch Decision
 ```
 
-
 # Key Learnings
 
 - Program Counter Control
