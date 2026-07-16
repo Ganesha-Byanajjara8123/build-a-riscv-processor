@@ -79,6 +79,8 @@ The module was verified using directed test cases.
 
 GTKWave confirmed correct source selection for both cases.
 
+<img width="959" height="326" alt="ALU_Src_MUX" src="https://github.com/user-attachments/assets/c846229b-610e-4eca-ab6d-6f605b48d620" />
+
 ---
 
 # Datapath Position
@@ -90,26 +92,6 @@ Register File -----
                      > ALU Source MUX ---> ALU
                     /
 Immediate ---------
-```
-
----
-
-# Project Structure
-
-```text
-ALU_Src_MUX/
-│
-├── RTL/
-│   └── ALU_Src_MUX.v
-│
-├── Testbench/
-│   └── tb_ALU_Src_MUX.v
-│
-├── Waveforms/
-│   └── ALU_Src_MUX.png
-│
-└── README.md
-```
 
 ---
 
