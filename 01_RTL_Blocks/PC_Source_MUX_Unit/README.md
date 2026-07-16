@@ -74,6 +74,8 @@ Directed verification confirmed:
 
 GTKWave verified correct PC selection in both scenarios.
 
+<img width="956" height="299" alt="PC_Src_MUX" src="https://github.com/user-attachments/assets/805f2a3d-b1b0-4f0c-b01f-6b32507cf2a6" />
+
 ---
 
 # Datapath Position
@@ -92,26 +94,6 @@ Address │   MUX    ├────► Next PC
          Branch Decision
 ```
 
----
-
-# Project Structure
-
-```text
-PC_Src_MUX/
-│
-├── RTL/
-│   └── PC_Src_MUX.v
-│
-├── Testbench/
-│   └── tb_PC_Src_MUX.v
-│
-├── Waveforms/
-│   └── PC_Src_MUX.png
-│
-└── README.md
-```
-
----
 
 # Key Learnings
 
