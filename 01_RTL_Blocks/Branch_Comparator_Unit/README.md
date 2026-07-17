@@ -8,6 +8,11 @@ It compares two register operands and determines whether a branch instruction sh
 
 # Overview
 
+The Block-Diagram of Branch Comparator
+
+<img width="752" height="412" alt="RISC (2)" src="https://github.com/user-attachments/assets/2252da67-782e-40cc-a18c-d0bc5ea52b05" />
+
+
 Branch instructions change the program flow only when a specified comparison evaluates to true.
 
 The Branch Comparator performs this comparison and generates a single control signal:
@@ -137,7 +142,10 @@ Both signed and unsigned comparisons were validated using GTKWave.
 
 ---
 
-# Waveform
+# GKTWaveform
+
+<img width="959" height="407" alt="Branch_Comparator" src="https://github.com/user-attachments/assets/ddfe1fa3-9214-4cb8-bbb7-a74704707470" />
+
 
 <p align="center">
 <img src="Waveforms/Branch_Comparator.png" width="900">
@@ -171,27 +179,6 @@ The waveform confirms:
                 ▼
            Program Counter
 ```
-
----
-
-# Project Structure
-
-```text
-Branch_Comparator/
-│
-├── RTL/
-│   └── Branch_Comparator.v
-│
-├── Testbench/
-│   └── tb_Branch_Comparator.v
-│
-├── Waveforms/
-│   └── Branch_Comparator.png
-│
-└── README.md
-```
-
----
 
 # Key Learnings
 
