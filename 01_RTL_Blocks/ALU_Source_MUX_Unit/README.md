@@ -105,3 +105,5 @@ Immediate ---------
 ---
 
 ➡️ **Next Module: PC Source MUX**
+---
+Building a RISC-V Processor Completely from Scratch 🚀
