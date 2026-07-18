@@ -195,7 +195,7 @@ The waveform confirms:
 # Next Module
 
 ➡️ **Single-Cycle RV32I Processor Integration**
-
+ 
 ---
 
 ### Building a RISC-V Processor Completely from Scratch 🚀
