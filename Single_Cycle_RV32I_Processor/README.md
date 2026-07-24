@@ -1,32 +1,41 @@
 <div align="center">
 
 # 🚀 Single-Cycle RV32I RISC-V Processor
-### *A Modular Verilog Implementation of the RV32I ISA with Directed Self-Checking Verification*
 
-<p align="center">
+### A Modular Verilog Implementation of the Base RV32I ISA
+
+<p>
 
 ![Verilog](https://img.shields.io/badge/Language-Verilog-blue?style=for-the-badge)
-![Architecture](https://img.shields.io/badge/Architecture-RV32I-success?style=for-the-badge)
-![Processor](https://img.shields.io/badge/Processor-Single--Cycle-orange?style=for-the-badge)
+![ISA](https://img.shields.io/badge/ISA-RV32I-success?style=for-the-badge)
+![Processor](https://img.shields.io/badge/CPU-Single--Cycle-orange?style=for-the-badge)
 ![Verification](https://img.shields.io/badge/Verification-Self--Checking-brightgreen?style=for-the-badge)
 ![Simulator](https://img.shields.io/badge/Simulator-Verilator-red?style=for-the-badge)
-![Waveforms](https://img.shields.io/badge/Waveform-GTKWave-purple?style=for-the-badge)
+![Waveforms](https://img.shields.io/badge/Waveforms-GTKWave-purple?style=for-the-badge)
 
 </p>
 
----
+*A complete 32-bit RV32I processor built in Verilog HDL and verified using directed assembly programs with a self-checking testbench.*
 
-### 📖 Building a RISC-V Processor One RTL Module at a Time
-
-*A complete modular implementation of a **32-bit Single-Cycle RV32I Processor** written in Verilog HDL, verified using directed assembly programs and a self-checking verification environment.*
-
-This project serves as the **foundation for my upcoming 5-Stage Pipelined RV32I Processor**, where hazard detection, forwarding, stalls, and pipeline control will be added.
+</div>
 
 ---
 
-## 🖼️ Processor Architecture
+# 📖 Project Overview
 
-> **📌 Insert your complete Single-Cycle Datapath image here**
+This project implements a **32-bit Single-Cycle RV32I Processor** following a modular RTL design methodology.
+
+Each hardware block was designed, verified, and tested independently before integrating the complete processor.
+
+The processor executes every instruction in a **single clock cycle**, supporting arithmetic, logical, memory, branch, jump, and upper-immediate instructions.
+
+> 🎯 **Next Goal:** Extend this design into a **5-Stage Pipelined RV32I Processor** with forwarding, hazard detection, stalls, and flush logic.
+
+---
+
+# 🏗️ Processor Architecture
+
+> **📷 Replace this with your complete datapath image**
 
 <p align="center">
 <img src="Images/SingleCycle_Datapath.png" width="900">
@@ -34,120 +43,190 @@ This project serves as the **foundation for my upcoming 5-Stage Pipelined RV32I 
 
 ---
 
-</div>
+# ✨ Features
 
-# 📑 Table of Contents
+### Processor
 
-- [📖 Project Overview](#-project-overview)
-- [✨ Key Features](#-key-features)
-- [🏗️ Processor Architecture](#️-processor-architecture)
-- [🧩 RTL Modules](#-rtl-modules)
-- [⚙️ Datapath Flow](#️-datapath-flow)
-- [📚 Supported RV32I Instructions](#-supported-rv32i-instructions)
-- [🧪 Verification Methodology](#-verification-methodology)
-- [📂 Test Programs](#-test-programs)
-- [📊 Verification Results](#-verification-results)
-- [🐞 Engineering Challenges](#-engineering-challenges)
-- [📁 Project Structure](#-project-structure)
-- [🛠️ Tools Used](#️-tools-used)
-- [🚀 Future Work](#-future-work)
-
----
-
-# 📖 Project Overview
-
-The **Single-Cycle RV32I Processor** is a complete implementation of the base **RISC-V RV32I Instruction Set Architecture (ISA)** using **Verilog HDL**.
-
-Unlike a pipelined processor where multiple instructions execute simultaneously, a **Single-Cycle Processor completes every instruction in one clock cycle**. Each instruction passes through the complete datapath—including instruction fetch, decode, execute, memory access, and write-back—before the next instruction begins.
-
-Rather than designing the processor as one large module, the architecture was developed using a **modular design methodology**. Every functional block was individually designed, simulated, and verified before integrating the complete processor.
-
-This approach made debugging easier, improved design readability, and ensured each module behaved correctly before system-level integration.
-
----
-
-# 🎯 Project Objectives
-
-✔ Understand the complete RV32I datapath
-
-✔ Design every processor block in Verilog HDL
-
-✔ Learn processor integration from individual RTL modules
-
-✔ Implement a complete Single-Cycle CPU
-
-✔ Verify processor functionality using assembly programs
-
-✔ Build a reusable foundation for a 5-Stage Pipeline Processor
-
----
-
-# ✨ Key Features
-
-### 🖥️ Processor Features
-
-- ✅ 32-bit RV32I Processor
-- ✅ Single-Cycle Datapath
+- ✅ RV32I Base ISA
+- ✅ 32-bit Single-Cycle Datapath
 - ✅ Modular RTL Design
 - ✅ Harvard Architecture
-- ✅ Byte Addressable Memory
-- ✅ Register File with 32 Registers
-- ✅ Immediate Generator
+- ✅ 32 × 32-bit Register File
 - ✅ Branch & Jump Support
-- ✅ Load & Store Instructions
-- ✅ Modular Control Logic
+- ✅ Load / Store Support
+- ✅ Immediate Generator
+- ✅ Write-Back Multiplexer
 
----
+### Verification
 
-### 🧪 Verification Features
-
-- ✅ Directed Assembly Verification
+- ✅ Directed Assembly Programs
 - ✅ Self-Checking Testbench
-- ✅ Automatic PASS / FAIL Reporting
+- ✅ Automatic PASS / FAIL Results
 - ✅ Verilator Simulation
-- ✅ GTKWave Analysis
-- ✅ Register & Memory Validation
-- ✅ Instruction-Level Verification
+- ✅ GTKWave Waveforms
 
 ---
 
-# 📈 Project Statistics
+# 🧩 RTL Modules
 
-| Category | Details |
-|-----------|----------|
-| ISA | RV32I |
-| Processor Type | Single-Cycle |
-| RTL Language | Verilog HDL |
+| Module | Function |
+|---------|----------|
+| Program Counter | Maintains current instruction address |
+| PC Source MUX | Selects next program counter |
+| Instruction Memory | Fetches instructions |
+| Decoder | Generates processor control signals |
+| Register File | Stores 32 general-purpose registers |
+| ALU Source MUX | Selects ALU operand |
+| ALU | Arithmetic & logical operations |
+| Immediate Generator | Generates I/S/B/U/J immediates |
+| Immediate Adder | Computes branch & jump targets |
+| Branch Comparator | Evaluates branch conditions |
+| Store Unit | Generates store data & write mask |
+| Data Memory | Memory read/write operations |
+| Load Unit | Sign/Zero extension for loads |
+| Write-Back MUX | Selects register write-back data |
+
+---
+
+# 📚 Supported RV32I Instructions
+
+| Category | Instructions |
+|----------|--------------|
+| Arithmetic | ADD, ADDI, SUB |
+| Logic | AND, ANDI, OR, ORI, XOR, XORI |
+| Shift | SLL, SLLI, SRL, SRLI, SRA, SRAI |
+| Comparison | SLT, SLTI, SLTU, SLTIU |
+| Memory | LB, LH, LW, LBU, LHU, SB, SH, SW |
+| Branch | BEQ, BNE, BLT, BGE, BLTU, BGEU |
+| Jump | JAL, JALR |
+| Upper Immediate | LUI, AUIPC |
+
+---
+
+# 🧪 Verification Methodology
+
+Every instruction group is verified using dedicated assembly test programs.
+
+```
+Assembly Program
+       │
+       ▼
+ GNU RISC-V Toolchain
+       │
+       ▼
+     HEX File
+       │
+       ▼
+ Instruction Memory
+       │
+       ▼
+ Single-Cycle CPU
+       │
+       ▼
+ Self-Checking Testbench
+       │
+       ▼
+     PASS / FAIL
+```
+
+---
+
+# 📂 Test Programs
+
+| Test Program | Instructions Covered | Status |
+|--------------|----------------------|--------|
+| `program_alu.s` | ALU, Load/Store, LUI, AUIPC | ✅ PASS |
+| `program_branch.s` | BEQ, BNE, BLT, BGE, BLTU, BGEU | ✅ PASS |
+| `program_jump_system.s` | JAL, JALR, ECALL, EBREAK | ✅ PASS |
+| `program_isa_coverage.s` | Additional ISA Verification | ✅ PASS |
+
+---
+
+# 📊 Verification Summary
+
+| Metric | Result |
+|---------|--------|
 | RTL Modules | 14+ |
-| Register Width | 32-bit |
-| Register Count | 32 |
-| Verification | Self-Checking Testbench |
-| Test Programs | 4 |
-| Assertions | 53 |
+| Assembly Programs | 4 |
+| Self-Checking Assertions | 53 |
+| ISA Coverage | RV32I |
 | Simulation | Verilator |
-| Waveform Viewer | GTKWave |
-| Next Project | 5-Stage Pipelined RV32I Processor |
+| Waveforms | GTKWave |
+| Result | ✅ All Tests Passed |
 
 ---
 
-# 🌟 Why This Project?
+# 🖼️ Results
 
-Modern processors are built by integrating many independent hardware blocks into a complete datapath.
+## 🏗️ Processor Datapath
 
-This project was created to gain a **deep understanding of processor architecture**, rather than only learning individual RTL modules.
+> *(Insert architecture image)*
 
-Throughout this project, every major component—including the Program Counter, Decoder, Register File, ALU, Immediate Generator, Branch Comparator, Memory Units, and Write-Back logic—was first designed and verified independently before integrating them into the final processor.
+---
 
-The final result is a complete Single-Cycle RV32I Processor capable of executing arithmetic, logical, memory, branch, jump, and upper-immediate instructions with functional verification using directed assembly test programs.
+## ✅ Verilator Output
+
+> *(Insert simulation PASS screenshot)*
+
+---
+
+## 📈 GTKWave Verification
+
+> *(Insert waveform screenshot)*
+
+---
+
+## 📝 Final Register Verification
+
+> *(Insert register dump screenshot)*
+
+---
+
+# 📁 Repository Structure
+
+```text
+Single_Cycle_RISCV/
+│
+├── RTL/
+├── Testbench/
+├── Test_Programs/
+├── HEX/
+├── Waveforms/
+├── Images/
+└── README.md
+```
+
+---
+
+# 🛠️ Tools Used
+
+- Verilog HDL
+- Verilator
+- GTKWave
+- GNU RISC-V Toolchain
+- Visual Studio Code
+- Git & GitHub
+
+---
+
+# 🚀 Future Work
+
+The next phase of this project is a **5-Stage Pipelined RV32I Processor**, adding:
+
+- ✅ Pipeline Registers
+- ✅ Hazard Detection Unit
+- ✅ Data Forwarding Unit
+- ✅ Stall Logic
+- ✅ Flush Logic
+- ✅ Branch Handling
+- ✅ Performance Improvements
 
 ---
 
 <div align="center">
 
-## 🚀 Next Section
+### ⭐ If you found this project interesting, consider giving it a Star!
 
-**🏗️ Processor Architecture & RTL Module Descriptions**
-
-*(Continued in Part 2)*
+**Building Processors, One RTL Module at a Time.**
 
 </div>
