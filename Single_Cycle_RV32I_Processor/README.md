@@ -160,27 +160,11 @@ Assembly Program
 
 ## 🏗️ Processor Datapath
 
-> *(Insert architecture image)*
+> *<img width="3400" height="2200" alt="Single_Cycle_Processor_Completed-Page-1 (1)" src="https://github.com/user-attachments/assets/106ab175-a281-4066-8353-71af5ff589a6" />
+*
 
 ---
 
-## ✅ Verilator Output
-
-> *(Insert simulation PASS screenshot)*
-
----
-
-## 📈 GTKWave Verification
-
-> *(Insert waveform screenshot)*
-
----
-
-## 📝 Final Register Verification
-
-> *(Insert register dump screenshot)*
-
----
 
 # 📁 Repository Structure
 
