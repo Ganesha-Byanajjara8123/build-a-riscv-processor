@@ -6,7 +6,7 @@
   <sub>IF → ID → EX → MEM → WB | Hazard Detection | Data Forwarding | Branch/Jump Handling</sub>
 </p>
 
----
+--- 
 
 ## 📌 Overview
 
