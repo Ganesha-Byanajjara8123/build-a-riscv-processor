@@ -6,7 +6,7 @@
         src="https://github.com/user-attachments/assets/88fa5098-24b1-4ece-87df-95eb920ea721"
         style="border-radius: 10px;"
     />
-
+   
   <h1 align="center" style="font-family: Arial; font-weight: 600; margin-top: 15px;">SURE ProEd (formerly SURE Trust) 
       </h1>
 <h2 style="color: #2b6cb0; font-family: Arial;">Skill Upgradation for Rural youth Empowerment Trust</h2>
